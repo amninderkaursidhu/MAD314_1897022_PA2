@@ -9,7 +9,9 @@ import android.widget.TextView;
 public class Main2Activity extends AppCompatActivity {
 
     public TextView tVname;
-    TextView  tVpwd,tVid,textView2,textView4,textView6;
+    public TextView tVpwd;
+    public TextView tVid;
+    TextView  textView2,textView4,textView6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

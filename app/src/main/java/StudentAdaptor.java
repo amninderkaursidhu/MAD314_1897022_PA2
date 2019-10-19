@@ -42,13 +42,19 @@ public class StudentAdaptor {
 
     @Override
     public int getItemCount() {
-        return .getInstance().getStudents().size();
+        return getInstance().getStudents().size();
+    }
+
+    private StudentDataSource getInstance() {
     }
 
     public void update() {
         mData.clear();
         mData.addAll(StudentDataSource.getInstance().getStudents());
         notifyDataSetChanged();
+    }
+
+    private void notifyDataSetChanged() {
     }
 }
 }
