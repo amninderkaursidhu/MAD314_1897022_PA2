@@ -8,7 +8,8 @@ import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
 
-TextView  tVname,tVpwd,tVid,textView2,textView4,textView6;
+    public TextView tVname;
+    TextView  tVpwd,tVid,textView2,textView4,textView6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +24,6 @@ TextView  tVname,tVpwd,tVid,textView2,textView4,textView6;
 
         Intent intent=getIntent();
         String username=intent .getStringExtra("username");
-        tVname.setText("Hi");
+        tVname.setText("Hi Aman");
     }
 }
