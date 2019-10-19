@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 public class StudentDataSource {
@@ -33,7 +32,7 @@ return instance;
 
      }
 
-    public Collection<? extends Student> getStudents() {
+    public List<StudentDataSource> getStudents() {
         return students;
     }
 }

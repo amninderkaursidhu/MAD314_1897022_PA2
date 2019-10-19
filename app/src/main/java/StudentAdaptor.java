@@ -35,19 +35,19 @@ public class StudentAdaptor {
 
         // set attributes to the item
         holder.tVname.setText(Student.get(position).name);
-        holder.tVpwd.setText(Student.get(position).name);
-        holder.tVid.setText(Student.get(position).sex);
+        holder.tVpwd.setText(Student.get(position).password);
+        holder.tVid.setText(Student.get(position).sid);
 
     }
 
     @Override
     public int getItemCount() {
-        return .getInstance().getAnimals().size();
+        return .getInstance().getStudents().size();
     }
 
     public void update() {
         mData.clear();
-        mData.addAll(AnimalRepository.getInstance().getAnimals());
+        mData.addAll(StudentDataSource.getInstance().getStudents());
         notifyDataSetChanged();
     }
 }
