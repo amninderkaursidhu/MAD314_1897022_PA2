@@ -11,7 +11,7 @@ import com.example.a1897022_mad314_assignment2.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StudentAdaptor {
+public class StudentAdaptor implements StudentAdapter {
     private LayoutInflater mInflater;
     private List<Student> mData = new ArrayList<>();
 
@@ -25,7 +25,7 @@ public class StudentAdaptor {
     @Override
     public Main2Activity onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = mInflater.inflate(R.layout.activity_main2, parent, false);
-        return new (view);
+
     }
 
     @Override
